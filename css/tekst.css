@@ -1,19 +1,21 @@
 .flex-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .box {
-    width: 22vw;
+    width: 400px;
     border: 1px solid;
-    flex-basis: 25%;
     padding: 1em;
     margin: 1em;
     border-radius: 0.3em;
     background: white;
     opacity: 0.9;
+}
+
+.box:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 8px 8px rgba(0,0,0,0.22);
 }
 
 .icon {
@@ -30,8 +32,24 @@
     margin-top: 2em;
 }
 
+input[type="checkbox"]:checked + .box {
+    background: green;
+    height: 200px;
+    width: 200px;
+}
+
 /* animation for the fontawesome icons*/
 @keyframes spin {
-    from {transform:rotate(0deg);}
-    to {transform:rotate(360deg);}
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .box {
+        width: 420px;
+    }
 }
