@@ -5,6 +5,7 @@
 
 html, body {
     margin: 0;
+    color: #252525;
 }
 
 /* grid */
@@ -281,7 +282,7 @@ html, body {
 /* end text utils */
 
 /* Menu */
-
+/* 
 .top-nav {
     display: flex;
     flex-direction: row;
@@ -388,6 +389,79 @@ html, body {
     .menu > li > a {
         z-index: -1;
     }
+} */
+
+nav.menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav.menu .menu-items {
+    width: 420px;
+}
+
+nav.menu ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav.menu ul li a {
+    display: block;
+    padding: 1em;
+}
+
+nav.menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+    background: #252525;
+
+    /* background: linear-gradient(to right, black , #010147); */
+    /* background: linear-gradient(to left, #000 75% , #324FB3); */
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+}
+
+nav.menu #logo {
+    background: #FF7954;
+    width: 63px;
+
+    transition: width 300ms ease-in-out;
+}
+nav.menu #logo a {
+    display: block;
+    padding: 0.8em 0.5em;
+}
+nav.menu:hover #logo {
+    width: 165px;
+}
+nav.menu #logo span.default {
+    display: inline-block;
+}
+nav.menu #logo span.fade-in {
+    overflow: hidden;
+    display: inline-block;
+    width: 0;
+    transition: width 300ms ease-in-out, opacity 300ms 300ms ease-in-out, transform 300ms 300ms ease-in-out;
+    opacity: 0;
+    transform: translateY(100%);
+}
+nav.menu #logo span.fade-in:nth-last-child(1) {
+    transition: width 300ms ease-in-out, opacity 300ms 600ms ease-in-out, transform 300ms 600ms ease-in-out;
+}
+nav.menu:hover #logo span.fade-in {
+    width: 50px;
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+main {
+    padding: 52px; /* fixes menu over content */
 }
 
 /* end menu */
