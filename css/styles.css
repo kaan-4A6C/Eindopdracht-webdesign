@@ -220,9 +220,6 @@ nav.menu ul li a {
     padding: 1em;
     position: relative;
 }
-nav.menu ul li.active a::before {
-    width: 100%;
-}
 nav.menu ul li a::before {
     content: "";
     display: block;
@@ -240,7 +237,7 @@ nav.menu ul li:nth-child(odd) a::before {
     left: initial;
     right: 0;
 }
-nav.menu ul li:hover a::before {
+nav.menu ul li:hover a::before, nav.menu ul li.active a::before {
     width: 100%;
 }
 
@@ -352,6 +349,7 @@ main {
         top: 0;
         box-shadow: none;
         display: initial;
+        height: initial;
     }
     nav.menu ul li {
         transform: rotateX(0deg);
@@ -371,7 +369,7 @@ main {
         top: initial;
         bottom: 0;
     }
-    nav.menu ul li:hover a::before {
+    nav.menu ul li:hover a::before, nav.menu ul li.active a::before {
         height: 100%;
     }
 }
