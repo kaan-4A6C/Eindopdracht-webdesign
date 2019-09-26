@@ -4,6 +4,7 @@
 }
 
 .box {
+    width: 400px;
     padding: 1em;
     margin: 1em;
     border-radius: 0.3em;
