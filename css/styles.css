@@ -295,7 +295,7 @@ nav.menu {
 
 nav.menu #logo {
     background: #FF7954;
-    width: 63px;
+    width: 60px;
 
     transition: width 300ms ease-in-out;
 }
@@ -304,7 +304,7 @@ nav.menu #logo a {
     padding: 0.8em 0.5em;
 }
 nav.menu:hover #logo {
-    width: 165px;
+    width: 125px;
 }
 nav.menu #logo span.default {
     display: inline-block;
@@ -317,13 +317,13 @@ nav.menu #logo span.fade-in {
     opacity: 0;
     transform: translateY(100%);
 }
-nav.menu #logo span.fade-in:nth-last-child(1) {
+/* nav.menu #logo span.fade-in:nth-last-child(1) {
     transition: width 300ms ease-in-out, opacity 300ms 600ms ease-in-out, transform 300ms 600ms ease-in-out;
-}
+} */
 nav.menu:hover #logo span.fade-in {
-    width: 50px;
+    width: 32px;
     opacity: 1;
-    transform: translateY(0%);
+    transform: translateY(4px);
 }
 
 main {
