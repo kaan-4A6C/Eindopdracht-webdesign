@@ -8,6 +8,23 @@ html, body {
     color: #252525;
 }
 
+.text-primary {
+    color: #FF7954;
+}
+
+.text-secondary {
+    /*color: ;*/
+}
+
+.bg-primary {
+    background: #252525;
+}
+
+.bg-secondary {
+    /*background: ;*/
+}
+
+
 /* grid */
 .row {
     display: flex;
