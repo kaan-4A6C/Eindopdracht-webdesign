@@ -18,6 +18,10 @@ html, body {
 .space-around { justify-content: space-around; }
 .space-between { justify-content: space-between; }
 
+[class*="col-"] {
+    padding: 1em;
+}
+
 .col-1 { flex-basis: calc(100%/12*1); }
 .col-2 { flex-basis: calc(100%/12*2); }
 .col-3 { flex-basis: calc(100%/12*3); }
@@ -268,6 +272,7 @@ nav.menu .menu-items {
 
 nav.menu ul {
     display: flex;
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-around;
     list-style-type: none;
@@ -330,5 +335,15 @@ nav.menu #logo:hover span.fade-in {
 main {
     margin-top: 52px; /* fixes menu over content */
 }
+
+/* @media screen and (min-width: 768px) {
+    nav.menu ul {
+        flex-direction: row;
+    }
+    nav.menu .menu-items {
+        position: fixed;
+        top: 52px;
+    }
+} */
 
 /* end menu */
