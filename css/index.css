@@ -1,8 +1,9 @@
 /* Homepage content */
 
 .homepage-bg {
+    z-index: -1;
     position: absolute;
-    height: 93vh;
+    height: 100vh;
     width: 100%;
     object-fit: cover;
 }
