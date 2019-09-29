@@ -1,0 +1,16 @@
+.zoom-image {
+    transition: transform 500ms cubic-bezier(.68,-0.55,.27,1.55),
+                left 500ms cubic-bezier(.68,-0.55,.27,1.55),
+                top 500ms cubic-bezier(.68,-0.55,.27,1.55);
+    position: fixed;
+    width: 25%;
+    left: 2em;
+    top: calc(2em + 52px);
+}
+
+#image-1:checked ~ .image-label .zoom-image {
+    transform: translateX(-50%) translateY(-50%) scale(3);
+    z-index: 1001;
+    left: 50%;
+    top: 50%;
+}

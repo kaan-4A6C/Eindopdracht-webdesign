@@ -7,6 +7,7 @@ html, body {
     margin: 0;
     color: #252525;
     overflow-x: hidden;
+    min-height: 100vh;
 }
 
 .text-primary {
