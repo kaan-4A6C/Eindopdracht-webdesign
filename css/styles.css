@@ -6,6 +6,7 @@
 html, body {
     margin: 0;
     color: #252525;
+    overflow-x: hidden;
 }
 
 .text-primary {
@@ -200,19 +201,19 @@ nav.menu ul li {
     transform: rotateX(90deg);
     transform-origin: bottom;
 
-    transition: transform 300ms ease-in-out;
+    transition: transform 200ms ease-in-out;
 }
 nav.menu ul li:nth-child(2) {
-    transition: transform 300ms 300ms ease-in-out;
+    transition: transform 200ms 200ms ease-in-out;
 }
 nav.menu ul li:nth-child(3) {
-    transition: transform 300ms 600ms ease-in-out;
+    transition: transform 200ms 400ms ease-in-out;
 }
 nav.menu ul li:nth-child(4) {
-    transition: transform 300ms 900ms ease-in-out;
+    transition: transform 200ms 600ms ease-in-out;
 }
 nav.menu ul li:nth-child(5) {
-    transition: transform 300ms 1200ms ease-in-out;
+    transition: transform 200ms 800ms ease-in-out;
 }
 nav.menu ul li:nth-last-child(1) {
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.75);
@@ -377,3 +378,62 @@ main {
 }
 
 /* end menu */
+
+/* animations */
+@keyframes x-left-to-pos {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+.ani.x-left-to-pos {
+    transform: translateX(-100%);
+    animation-name: x-left-to-pos;
+}
+.ani.x-left-to-pos.reverse {
+    transform: translateX(0%);
+}
+@keyframes x-right-to-pos {
+    from { transform: translateX(25%); }
+    to { transform: translateX(0); }
+}
+.ani.x-right-to-pos {
+    transform: translateX(25%);
+    animation-name: x-right-to-pos;
+}
+.ani.x-right-to-pos.reverse {
+    transform: translateX(0%);
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.ani.fade {
+    opacity: 0;
+    animation-name: fade;
+}
+.ani.fade.reverse { opacity: 1; }
+
+
+
+.ani {
+    animation-fill-mode: forwards; /* last keyframe is final css */
+    animation-timing-function: ease-in-out; /* default animation */
+}
+
+.ani.reverse { animation-direction: reverse; }
+
+.ani.duration-03 { animation-duration: 300ms; }
+.ani.duration-05 { animation-duration: 500ms; }
+.ani.duration-1 { animation-duration: 1s; }
+.ani.duration-15 { animation-duration: 1.5s; }
+.ani.duration-2 { animation-duration: 2s; }
+.ani.duration-3 { animation-duration: 3s; }
+
+.ani.delay-1 { animation-delay: 1s; }
+.ani.delay-2 { animation-delay: 2s; }
+.ani.delay-3 { animation-delay: 3s; }
+
+.ani.linear { animation-timing-function: linear; }
+.ani.ease-in-out { animation-timing-function: ease-in-out; }
+
+/* end animations */
