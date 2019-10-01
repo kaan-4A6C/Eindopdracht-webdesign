@@ -303,10 +303,10 @@ nav.menu #logo:hover span.fade-in {
     height: 100%;
 }
 #hamburger:checked ~ .hamburger-label .hamburger .burger:nth-child(1) {
-    transform: translateY(16px) rotate(45deg);
+    transform: translateY(12px) rotate(45deg);
 }
 #hamburger:checked ~ .hamburger-label .hamburger .burger:nth-child(3) {
-    transform: translateY(-10px) rotate(-45deg);
+    transform: translateY(-14px) rotate(-45deg);
 }
 #hamburger:checked ~ .menu-items ul li {
     transform-origin: top;
@@ -317,7 +317,7 @@ nav.menu #logo:hover span.fade-in {
     opacity: 0;
 }
 nav.menu .hamburger {
-    padding: 8px;
+    padding: 10.5px;
     cursor: pointer;
 }
 nav.menu .hamburger:hover .burger {
