@@ -25,12 +25,6 @@ html, body {
     /*background: ;*/
 }
 
-.m-auto { margin: auto; }
-
-.m-left { margin-left: auto; }
-
-.m-right { margin-right: auto; }
-
 /* display */
 
 .d-block { display: block; }
@@ -513,6 +507,15 @@ main {
 }
 
 /* end card */
+
+/* margins and paddings */
+.m-auto { margin: auto; }
+.m-left { margin-left: auto; }
+.m-right { margin-right: auto; }
+.p-0 { padding: 0 !important; }
+.m-0 { margin: 0 !important; }
+/* end margins and paddings */
+
 /* random utils */
 
 .rounded { border-radius: 0.3em; }
