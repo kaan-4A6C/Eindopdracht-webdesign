@@ -5,6 +5,9 @@
 .img-wrapper img {
     z-index: -1;
     transition: transform 300ms ease-in-out;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
 }
 .img-wrapper:hover img {
     transform: scale(1.1);
@@ -15,13 +18,8 @@
     margin: 0;
     left: 1em;
     color: #fff;
-    /* transition: left 300ms ease-in-out, bottom 300ms ease-in-out, transform 300ms ease-in-out, color 300ms ease-in-out; */
+    z-index: 1;
 }
-/* .img-wrapper:hover h3 {
-    left: 50%;
-    bottom: 50%;
-    transform: translateX(-50%) translateY(50%);
-} */
 
 .background {
     width: 100%;
@@ -30,18 +28,18 @@
     left: 0;
     top: 0;
 
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.75);
     opacity: 0;
     z-index: -100;
 
     transition: opacity 300ms ease-in-out, z-index 300ms;
 }
-#image-1:checked ~ .background {
-    z-index: 0;
+.image-checkbox:checked ~ .background {
+    z-index: 2;
     opacity: 1;
 }
 
-#image-1:checked ~ main .img-wrapper {
+.image-checkbox:checked ~ label .img-wrapper {
     position: fixed;
     top: calc(50% - 3em);
     left: 50%;
@@ -51,22 +49,17 @@
     max-width: 90vh;
     overflow: initial;
     padding-top: 3em;
+    height: initial;
+    z-index: 100;
 }
-#image-1:checked ~ main .img-wrapper h3 {
-    top: 0em;
+.image-checkbox:checked ~ label .img-wrapper h3 {
+    top: 1em;
     left: 0em;
-    color: #252525;
 }
-#image-1:checked ~ main .img-wrapper:hover h3 {
-    transform: none;
-    left: initial;
-    bottom: initial;
-    top: 0em;
-}
-#image-1:checked ~ main .img-wrapper:hover img {
+.image-checkbox:checked ~ label .img-wrapper img {
     transform: none;
 }
-#image-1:checked ~ main .img-wrapper .close {
+.image-checkbox:checked ~ label .img-wrapper .close {
     display:  initial;
 }
 
@@ -82,7 +75,7 @@
 }
 .img-wrapper .close .line {
     height: 5px;
-    background: #252525;
+    background: #fff;
     width: 2.5em;
     transform: translateY(1.25em) translateX(0.25em) rotate(45deg);
     position: absolute;
