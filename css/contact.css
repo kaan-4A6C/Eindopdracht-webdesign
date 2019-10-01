@@ -29,10 +29,11 @@ body {
     background: none;
     font-size: 1.3em;
     padding: 10px 15px;
+    transition: all 500ms ease;
 }
 
 .send-btn:hover {
-
+    transform: scale(1.04);
 }
 
 @keyframes gradBG {
@@ -42,5 +43,11 @@ body {
 
     100% {
         background-position: 80% 50%;
+    }
+}
+
+@media screen and (max-width: 1200px ) {
+    .row.padding {
+        padding: 0 10%;
     }
 }
