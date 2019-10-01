@@ -19,13 +19,17 @@ html, body {
 .text-white { color: #FFFFFF; }
 
 
-.bg-primary {
-    background: #252525;
-}
+.bg-primary { background: #252525; }
 
 .bg-secondary {
     /*background: ;*/
 }
+
+.m-auto { margin: auto; }
+
+.m-left { margin-left: auto; }
+
+.m-right { margin-right: auto; }
 
 /* grid */
 .row {
@@ -466,6 +470,7 @@ main {
 .ani.duration-3 { animation-duration: 3s; }
 .ani.duration-4 { animation-duration: 4s; }
 
+.ani.delay-05 { animation-delay: 500ms; }
 .ani.delay-1 { animation-delay: 1s; }
 .ani.delay-2 { animation-delay: 2s; }
 .ani.delay-3 { animation-delay: 3s; }

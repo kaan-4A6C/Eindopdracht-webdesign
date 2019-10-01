@@ -1,11 +1,8 @@
 body {
-    display: flex;
     height: 100vh;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(-45deg, #30cfd0, #330867, #ff0844, #ffb199)
+    background: linear-gradient(-45deg, #324FB3, #330867, #ff0844, #ffb199)
     no-repeat 50% 50% / 400% 400%;
-    animation: gradBG 10s ease infinite;
+    animation: gradBG 10s ease forwards;
 }
 
 .contact-title {
@@ -14,12 +11,16 @@ body {
 
 .input {
     margin: 1em;
-    padding: 0 0 15px 0 !important;
+    padding: 0 0 10px 0 !important;
     font-size: 1.25em;
     width: 300px;
     background: none;
     border: 0px;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #fff;
+}
+
+.input::placeholder {
+    /*color: darkgray;*/
 }
 
 .input:focus {
@@ -31,11 +32,7 @@ body {
         background-position: 0% 50%;
     }
 
-    50% {
-        background-position: 100% 50%;
-    }
-
     100% {
-        background-position: 0% 50%;
+        background-position: 80% 50%;
     }
 }
