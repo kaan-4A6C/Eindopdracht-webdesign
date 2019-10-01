@@ -2,16 +2,16 @@ body {
     height: 100vh;
     background: linear-gradient(-45deg, #324FB3, #330867, #ff0844, #ffb199)
     no-repeat 50% 50% / 400% 400%;
-    animation: gradBG 10s ease forwards;
+    animation: gradBG 4s ease forwards;
 }
 
-.row.padding {
-    padding: 0 25%;
-}
+#textarea { resize: none; }
+#select { color: #fff; }
+#select > option { background: #324FB3; }
 
-.contact-title {
-    margin: 130px 0 60px 0;
-}
+.row.padding { padding: 0 25%; }
+
+.contact-title { margin: 130px 0 60px 0; }
 
 .input {
     margin: 10px 0;
@@ -22,11 +22,21 @@ body {
     border-bottom: 1px solid #fff;
 }
 
-.input:focus {
-    outline: none;
+.input:focus { outline: none; }
+
+.radio:checked {
+    background: #324FB3;
 }
 
+
 .send-btn {
+    border: 1px solid white;
+    background: none;
+    font-size: 1.3em;
+    padding: 10px 15px;
+}
+
+.send-btn:hover {
 
 }
 
