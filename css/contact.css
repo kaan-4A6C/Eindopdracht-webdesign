@@ -15,7 +15,7 @@ body {
 
 .input {
     margin: 10px 0;
-    padding: 0 0 10px 0 !important;
+    padding: 0 0 10px 0;
     font-size: 1.25em;
     background: none;
     border: 0px;
@@ -23,11 +23,6 @@ body {
 }
 
 .input:focus { outline: none; }
-
-.radio:checked {
-    background: #324FB3;
-}
-
 
 .send-btn {
     border: 1px solid white;

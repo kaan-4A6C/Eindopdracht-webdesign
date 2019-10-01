@@ -1,3 +1,7 @@
+body {
+    background:  #324FB3;
+}
+
 #tekst-title {
     font-size: 2em;
     padding: 20px 0px;
@@ -5,7 +9,7 @@
 
 .box-container {
     padding: 20px 0px;
-    background: #e2e1e0;
+    /*background: #e2e1e0;*/
 }
 
 .icon {
