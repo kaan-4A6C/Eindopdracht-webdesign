@@ -10,13 +10,14 @@ html, body {
     min-height: 100vh;
 }
 
-.text-primary {
-    color: #FF7954;
-}
+.text-primary { color: #FF7954; }
 
 .text-secondary {
     /*color: ;*/
 }
+
+.text-white { color: #FFFFFF; }
+
 
 .bg-primary {
     background: #252525;
@@ -161,8 +162,6 @@ html, body {
 /* end widths and heights */
 
 /* text utils */
-
-.text-white { color: #FFFFFF; }
 
 .text-center { text-align: center; }
 .text-left { text-align: left; }
