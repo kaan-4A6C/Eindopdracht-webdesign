@@ -54,6 +54,7 @@ html, body {
 .row.no-gutter [class*="col-"] { padding: 0; }
 .row.no-gutter { padding: 0px; }
 
+.center { justify-content: center; }
 .space-around { justify-content: space-around; }
 .space-between { justify-content: space-between; }
 
