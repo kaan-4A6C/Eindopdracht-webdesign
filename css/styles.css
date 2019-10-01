@@ -382,11 +382,11 @@ main {
 
 /* animations */
 @keyframes left-to-pos {
-    from { transform: translateX(-100%); }
+    from { transform: translateX(-25%); }
     to { transform: translateX(0); }
 }
 .ani.left-to-pos {
-    transform: translateX(-100%);
+    transform: translateX(-25%);
     animation-name: left-to-pos;
 }
 .ani.left-to-pos.reverse {
@@ -402,6 +402,28 @@ main {
 }
 .ani.right-to-pos.reverse {
     transform: translateX(0%);
+}
+@keyframes bottom-to-pos {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+}
+.ani.bottom-to-pos {
+    transform: translateY(100%);
+    animation-name: bottom-to-pos;
+}
+.ani.bottom-to-pos.reverse {
+    transform: translateY(0%);
+}
+@keyframes top-to-pos {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+.ani.top-to-pos {
+    transform: translateY(-100%);
+    animation-name: top-to-pos;
+}
+.ani.top-to-pos.reverse {
+    transform: translateY(0%);
 }
 
 @keyframes fade {
@@ -420,6 +442,13 @@ main {
 }
 .ani.spin { animation-name: spin; }
 .ani.spin.reverse { transform: rotate(360deg); }
+
+@keyframes zoom {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.ani.zoom { animation-name: zoom; }
+.ani.zoom.reverse { transform: scale(1); }
 
 .ani {
     animation-fill-mode: forwards; /* last keyframe is final css */
@@ -447,5 +476,6 @@ main {
 
 .ani.linear { animation-timing-function: linear; }
 .ani.ease-in-out { animation-timing-function: ease-in-out; }
+.ani.bounce { animation-timing-function: cubic-bezier(.1,-0.09,.27,1.55); }
 
 /* end animations */

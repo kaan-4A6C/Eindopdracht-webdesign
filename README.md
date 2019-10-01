@@ -3,9 +3,9 @@ Just a plain HTML/CSS site
 
 # colors
 
-primary: ``#324FB3``
+primary: ``#FF7954``
 
-secondary: ``#FF7954``
+secondary: ``#324FB3``
 
 text-color: ``#fff``/``#252525``
 
