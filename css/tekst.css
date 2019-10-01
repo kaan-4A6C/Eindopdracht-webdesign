@@ -21,26 +21,6 @@
     transform: scale(1.02);
 }
 
-.icon {
-    -webkit-animation: spin 4s infinite linear;
-    animation-play-state: paused;
-}
-
-.icon:hover {
-    -webkit-animation: spin 4s infinite linear;
-    -moz-animation-play-state: running;
-}
-
-/* animation for the fontawesome icons*/
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
 @media screen and (max-width: 992px) {
     .box {
         width: 420px;

@@ -381,26 +381,26 @@ main {
 /* end menu */
 
 /* animations */
-@keyframes x-left-to-pos {
+@keyframes left-to-pos {
     from { transform: translateX(-100%); }
     to { transform: translateX(0); }
 }
-.ani.x-left-to-pos {
+.ani.left-to-pos {
     transform: translateX(-100%);
-    animation-name: x-left-to-pos;
+    animation-name: left-to-pos;
 }
-.ani.x-left-to-pos.reverse {
+.ani.left-to-pos.reverse {
     transform: translateX(0%);
 }
-@keyframes x-right-to-pos {
+@keyframes right-to-pos {
     from { transform: translateX(25%); }
     to { transform: translateX(0); }
 }
-.ani.x-right-to-pos {
+.ani.right-to-pos {
     transform: translateX(25%);
-    animation-name: x-right-to-pos;
+    animation-name: right-to-pos;
 }
-.ani.x-right-to-pos.reverse {
+.ani.right-to-pos.reverse {
     transform: translateX(0%);
 }
 
@@ -414,12 +414,20 @@ main {
 }
 .ani.fade.reverse { opacity: 1; }
 
-
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+.ani.spin { animation-name: spin; }
+.ani.spin.reverse { transform: rotate(360deg); }
 
 .ani {
     animation-fill-mode: forwards; /* last keyframe is final css */
     animation-timing-function: ease-in-out; /* default animation */
 }
+
+.ani.onhover { animation-play-state: paused; }
+.ani.onhover:hover { animation-play-state: running; }
 
 .ani.reverse { animation-direction: reverse; }
 
@@ -429,10 +437,13 @@ main {
 .ani.duration-15 { animation-duration: 1.5s; }
 .ani.duration-2 { animation-duration: 2s; }
 .ani.duration-3 { animation-duration: 3s; }
+.ani.duration-4 { animation-duration: 4s; }
 
 .ani.delay-1 { animation-delay: 1s; }
 .ani.delay-2 { animation-delay: 2s; }
 .ani.delay-3 { animation-delay: 3s; }
+
+.ani.infinity { animation-iteration-count: infinite; }
 
 .ani.linear { animation-timing-function: linear; }
 .ani.ease-in-out { animation-timing-function: ease-in-out; }
