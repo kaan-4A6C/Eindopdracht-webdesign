@@ -53,7 +53,10 @@ html, body {
 .space-between  { justify-content: space-between; }
 .align-items-stretch { align-items: stretch; }
 
-.row [class*="col-"] > .row { padding: 0; }
+.row [class*="col-"] > .row {
+    padding: 0;
+    margin: -1em;
+}
 
 .col-1  { flex-basis: calc(100%/12*1); }
 .col-2  { flex-basis: calc(100%/12*2); }
@@ -68,6 +71,7 @@ html, body {
 .col-11 { flex-basis: calc(100%/12*11); }
 .col-12 { flex-basis: calc(100%/12*12); }
 .hide   { display: none; }
+.show   { display: initial; }
 
 @media screen and (min-width: 576px) {
     .col-sm-1   { flex-basis: calc(100%/12*1); }
@@ -83,6 +87,7 @@ html, body {
     .col-sm-11  { flex-basis: calc(100%/12*11); }
     .col-sm-12  { flex-basis: calc(100%/12*12); }
     .sm-hide    { display: none; }
+    .sm-show    { display: initial; }
 }
 
 @media screen and (min-width: 768px) {
@@ -99,6 +104,7 @@ html, body {
     .col-md-11  { flex-basis: calc(100%/12*11); }
     .col-md-12  { flex-basis: calc(100%/12*12); }
     .md-hide    { display: none; }
+    .md-show    { display: initial; }
 }
 
 @media screen and (min-width: 992px) {
@@ -115,6 +121,7 @@ html, body {
     .col-lg-11  { flex-basis: calc(100%/12*11); }
     .col-lg-12  { flex-basis: calc(100%/12*12); }
     .lg-hide    { display: none; }
+    .lg-show    { display: initial; }
 }
 
 @media screen and (min-width: 1200px) {
@@ -131,6 +138,7 @@ html, body {
     .col-xl-11  { flex-basis: calc(100%/12*11); }
     .col-xl-12  { flex-basis: calc(100%/12*12); }
     .xl-hide    { display: none; }
+    .xl-show    { display: initial; }
 }
 
 /* end grid */

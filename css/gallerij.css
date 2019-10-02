@@ -39,7 +39,7 @@
     opacity: 1;
 }
 
-.image-checkbox:checked ~ label .img-wrapper {
+.image-checkbox:checked ~ .img-wrapper {
     position: fixed;
     top: calc(50% - 3em);
     left: 50%;
@@ -52,14 +52,14 @@
     height: initial;
     z-index: 100;
 }
-.image-checkbox:checked ~ label .img-wrapper h3 {
+.image-checkbox:checked ~ .img-wrapper h3 {
     top: 1em;
     left: 0em;
 }
-.image-checkbox:checked ~ label .img-wrapper img {
+.image-checkbox:checked ~ .img-wrapper img {
     transform: none;
 }
-.image-checkbox:checked ~ label .img-wrapper .close {
+.image-checkbox:checked ~ .img-wrapper .close {
     display:  initial;
 }
 
