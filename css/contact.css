@@ -2,7 +2,7 @@ body {
     height: 100vh;
     background: linear-gradient(-45deg, #324FB3, #330867, #ff0844, #ffb199)
     no-repeat 50% 50% / 400% 400%;
-    animation: gradBG 4s ease forwards;
+    animation: gradBg 4s ease forwards;
 }
 
 #textarea { resize: none; }
@@ -12,6 +12,12 @@ body {
 .row.padding { padding: 0 25%; }
 
 .contact-title { margin: 130px 0 60px 0; }
+.success-title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 
 .input {
     margin: 10px 0;
@@ -22,6 +28,10 @@ body {
     border-bottom: 1px solid #fff;
 }
 
+.input:invalid {
+    border-bottom: 1px solid red;
+}
+
 .input:focus { outline: none; }
 
 .send-btn {
@@ -29,14 +39,16 @@ body {
     background: none;
     font-size: 1.3em;
     padding: 10px 15px;
-    transition: all 500ms ease;
+    transition: transform 500ms ease;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .send-btn:hover {
     transform: scale(1.04);
 }
 
-@keyframes gradBG {
+@keyframes gradBg {
     0% {
         background-position: 0% 50%;
     }
