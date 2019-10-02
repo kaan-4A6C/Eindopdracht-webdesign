@@ -42,39 +42,40 @@
 </nav>
 <main class="ani linear fade duration-15 delay-05">
     <h1 class="text-center text-white contact-title ">Neem contact met ons op!</h1>
-    <form>
+    <form action="bedankt.html">
         <div class="row padding">
-            <div class="col-md-6 col-xs-12">
+            <div class="col-12 col-md-6 col-xs-12">
                 <input type="text" class="input text-white w-100" placeholder="Voornaam">
             </div>
-            <div class="col-md-6 col-xs-12">
+            <div class="col-12 col-md-6 col-xs-12">
                 <input type="text" class="input text-white w-100" placeholder="Achternaam">
             </div>
-            <div class="col-md-12">
+            <div class="col-12 col-12 col-md-12">
                 <input type="email" class="input text-white w-100" placeholder="Email">
             </div>
-            <div class="col-md-12">
+            <div class="col-12 col-md-12">
                 <input type="password" class="input text-white w-100" placeholder="Wachtwoord">
             </div>
-            <div class="col-md-12">
+            <div class="col-12 col-md-12">
                 <select id="select" class="input w-100" name="select">
-                    <option value="value1" class="contact-option">1</option>
-                    <option value="value2" class="contact-option">2</option>
-                    <option value="value3" class="contact-option">3</option>
-                    <option value="value4" class="contact-option">4</option>
+                    <option value="" disabled selected>Selecteer je leeftijdsgroep</option>
+                    <option value="value1" class="contact-option">< 18 jaar</option>
+                    <option value="value2" class="contact-option">18 - 24 Jaar</option>
+                    <option value="value3" class="contact-option">24 - 65 Jaar</option>
+                    <option value="value4" class="contact-option">65+ Jaar</option>
                 </select>
             </div>
-            <div class="col-md-12">
-                <input name="gender" class="radio" type="radio"><label class="text-white" for="">Man</label>
-                <input name="gender" class="radio" type="radio"><label class="text-white" for="">Vrouw</label>
+            <div class="col-12 col-md-12">
+                <input id="man" name="gender" class="radio" type="radio"><label class="text-white" for="man"> Man</label>
+                <input id="vrouw" name="gender" class="radio" type="radio"><label class="text-white" for="vrouw"> Vrouw</label>
             </div>
-            <div class="col-md-12">
+            <div class="col-12 col-md-12">
                 <textarea id="textarea" placeholder="Type hier je tekst!" class="input w-100 text-white" name="text" rows="1"></textarea>
             </div>
-            <div class="col-md-12">
+            <div class="col-12 col-md-12">
                 <input class="checkbox" type="checkbox"><label class="text-white" for="">Ik wil een wekelijkse spam mail krijgen</label>
             </div>
-            <div class="col-md-12">
+            <div class="col-12 col-md-12">
                 <input type="submit" class="text-white m-auto send-btn" value="Verzenden">
             </div>
         </div>

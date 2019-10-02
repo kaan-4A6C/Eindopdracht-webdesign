@@ -1,0 +1,16 @@
+body {
+    height: 100vh;
+    background: linear-gradient(-45deg, #324FB3, #330867, #ff0844, #ffb199)
+    no-repeat 50% 50% / 400% 400%;
+    animation: gradBgRev 4s ease forwards;
+}
+
+@keyframes gradBgRev {
+    0% {
+        background-position: 80% 50%;
+    }
+
+    100% {
+        background-position: 50% 50%;
+    }
+}
