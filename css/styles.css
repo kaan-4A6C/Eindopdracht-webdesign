@@ -10,6 +10,28 @@ html, body {
     min-height: 100vh;
 }
 
+footer {
+    height: 400px;
+    background: #000;
+}
+
+
+.footer-hr {
+border: 1px solid;
+height: 1px;
+}
+
+.footer-padding { padding: 40px 8%; }
+.footer-nav-padding { padding: 0 3% !important; }
+.footer-nav ul { padding: 0; }
+.footer-nav li { list-style-type: none; }
+
+.footer-nav-item {
+    display: block;
+    padding: 3px 0 !important;
+}
+
+
 .text-primary { color: #FF7954; }
 
 .text-secondary {
@@ -303,9 +325,6 @@ nav.menu #logo span.fade-in {
     opacity: 0;
     transform: translateY(100%);
 }
-/* nav.menu #logo span.fade-in:nth-last-child(1) {
-    transition: width 300ms ease-in-out, opacity 300ms 600ms ease-in-out, transform 300ms 600ms ease-in-out;
-} */
 nav.menu #logo:hover span.fade-in {
     width: 32px;
     opacity: 1;
