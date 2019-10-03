@@ -422,11 +422,11 @@ main {
     transform: translateX(0%);
 }
 @keyframes bottom-to-pos {
-    from { transform: translateY(100%); }
+    from { transform: translateY(25%); }
     to { transform: translateY(0); }
 }
 .ani.bottom-to-pos {
-    transform: translateY(100%);
+    transform: translateY(25%);
     animation-name: bottom-to-pos;
 }
 .ani.bottom-to-pos.reverse {
@@ -490,6 +490,7 @@ main {
 .ani.delay-1 { animation-delay: 1s; }
 .ani.delay-2 { animation-delay: 2s; }
 .ani.delay-3 { animation-delay: 3s; }
+.ani.delay-4 { animation-delay: 4s; }
 
 .ani.infinity { animation-iteration-count: infinite; }
 
@@ -527,5 +528,6 @@ main {
 /* random utils */
 
 .rounded { border-radius: 0.3em; }
+.fit-cover { object-fit: cover; }
 
 /* end random utils */
