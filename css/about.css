@@ -6,3 +6,12 @@ h1 {
 #map {
     min-height: 20em;
 }
+
+@media screen and (min-width: 1024px) {
+    #img {
+        max-height: 480px;
+    }
+    #img img {
+        object-position: bottom;
+    }
+}
