@@ -9,21 +9,7 @@
 }
 
 #title-block {
-    width: 100%;
-    position: absolute;
-    margin-top: 30vh;
-}
-
-#title {
-    font-weight: bold;
-    font-size: 3em;
-    text-align: center;
-    margin: 0;
-}
-
-#sub-title {
-    font-size: 1.8em;
-    text-align: center;
+    padding-top: 35vh;
 }
 
 /* End homepage content */

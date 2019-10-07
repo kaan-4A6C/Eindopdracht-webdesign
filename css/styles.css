@@ -10,9 +10,16 @@ html, body {
     min-height: 100vh;
 }
 
+h1 {
+    font-size: 4rem;
+    margin-top: 0.25em;
+    margin-bottom: 0em;
+}
+
 footer {
     background: #252525;
 }
+
 
 
 .footer-hr {
@@ -40,11 +47,12 @@ height: 1px;
 .text-white { color: #FFFFFF; }
 
 
-.bg-primary { background: #252525; }
+.bg-primary { background: #324FB3; }
 
 .bg-secondary {
-    /*background: ;*/
+    background: #FF7954;
 }
+
 
 /* display */
 
