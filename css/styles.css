@@ -10,6 +10,10 @@ html, body {
     min-height: 100vh;
 }
 
+main {
+    min-height: 88vh;
+}
+
 footer {
     background: #252525;
 }
@@ -30,7 +34,33 @@ padding: 3px 0 !important;
     float: right;
 }
 
-#footer-nav > ul > li { list-style-type: none; }
+.footer-icon > a {
+    color: #FF7954;
+}
+
+#snapchat-icon:hover {
+    transition: color 1s ease-out;
+    color: rgb(255, 252, 0);
+}
+
+#facebook-icon:hover {
+    transition: color 1s ease-out;
+    color: #4267B2;
+}
+
+#github-icon:hover {
+    transition: color 1s ease-out;
+    color: #fff;
+}
+
+#footer-nav > ul > li {
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+#footer-nav > ul > li > a {
+    text-decoration: none;
+}
 
 .text-primary { color: #FF7954; }
 

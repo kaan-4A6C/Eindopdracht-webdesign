@@ -4,6 +4,7 @@ body {
 
 .box-container {
     padding: 20px 0px;
+    min-height: 95vh;
     /*background:  #324FB3;*/
 }
 
