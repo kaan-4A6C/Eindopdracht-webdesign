@@ -538,7 +538,7 @@ main {
 
 /* end card */
 
-/* margins and paddings */
+/* margins  */
 .m-auto { margin: auto !important; }
 .ml-auto { margin-left: auto !important; }
 .mr-auto { margin-right: auto !important; }
@@ -592,9 +592,7 @@ main {
 .m-4 { margin: calc(1em * 1.5) !important; }
 .m-5 { margin: calc(1em * 3) !important; }
 
-
-
-
+/* padding */
 
 .pl-0 { padding-left: 0 !important; }
 .pl-1 { padding-left: calc(1em * 0.25) !important; }
