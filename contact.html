@@ -66,14 +66,23 @@
                 </select>
             </div>
             <div class="col-12 col-md-12">
-                <input id="man" name="gender" class="radio" type="radio"><label class="text-white" for="man"> Man</label>
-                <input id="vrouw" name="gender" class="radio" type="radio"><label class="text-white" for="vrouw"> Vrouw</label>
+                <div class="radio d-inline">
+                    <input id="man" name="gender" class="radio" type="radio">
+                    <label class="text-white" for="man"> Man</label>
+                </div>
+                <div class="radio d-inline">
+                    <input id="vrouw" name="gender" class="radio" type="radio">
+                    <label class="text-white" for="vrouw"> Vrouw</label>
+                </div>
             </div>
             <div class="col-12 col-md-12">
                 <textarea id="textarea" placeholder="Type hier je tekst!" class="input w-100 text-white" name="text" rows="1"></textarea>
             </div>
             <div class="col-12 col-md-12">
-                <input class="checkbox" type="checkbox"><label class="text-white" for="">Ik wil een wekelijkse spam mail krijgen</label>
+                <div class="checkbox d-inline">
+                    <input id="spammail" class="checkbox" type="checkbox">
+                    <label class="text-white" for="spammail">Ik wil een wekelijkse spam mail krijgen</label>
+                </div>
             </div>
             <div class="col-12 col-md-12">
                 <input type="submit" class="text-white m-auto send-btn" value="Verzenden">
