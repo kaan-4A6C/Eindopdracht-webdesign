@@ -1,3 +1,10 @@
+h1 {
+    font-size: 4rem;
+    margin-top: 0.25em;
+    margin-bottom: 0em;
+}
+
+
 .img-wrapper {
     position: relative;
     overflow: hidden;

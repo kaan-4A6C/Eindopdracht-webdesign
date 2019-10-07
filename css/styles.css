@@ -10,12 +10,6 @@ html, body {
     min-height: 100vh;
 }
 
-h1 {
-    font-size: 4rem;
-    margin-top: 0.25em;
-    margin-bottom: 0em;
-}
-
 footer {
     background: #252525;
 }
