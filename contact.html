@@ -46,18 +46,31 @@
     <form action="bedankt.html">
         <div class="row padding">
             <div class="col-12 col-md-6 col-xs-12">
-                <input type="text" class="input text-white w-100" placeholder="Voornaam">
+                <div class="input-control">
+                    <input required id="voornaam" type="text" class="input text-white w-100" placeholder="Voornaam">
+                    <label for="voornaam">Voornaam</label>
+                </div>
             </div>
             <div class="col-12 col-md-6 col-xs-12">
-                <input type="text" class="input text-white w-100" placeholder="Achternaam">
+                <div class="input-control">
+                    <input required id="achternaam" type="text" class="input text-white w-100" placeholder="Achternaam">
+                    <label for="achternaam">Achternaam</label>
+                </div>
             </div>
             <div class="col-12 col-12 col-md-12">
-                <input type="email" class="input text-white w-100" placeholder="Email">
+                <div class="input-control">
+                    <input required id="email" type="email" class="input text-white w-100" placeholder="Email">
+                    <label for="email">Email</label>
+                </div>
             </div>
             <div class="col-12 col-md-12">
-                <input type="password" class="input text-white w-100" placeholder="Wachtwoord">
+                <div class="input-control">
+                    <input required id="password" type="password" class="input text-white w-100" placeholder="Wachtwoord">
+                    <label for="password">Password</label>
+                </div>
             </div>
             <div class="col-12 col-md-12">
+                <label for="select">Leeftijdsgroep</label>
                 <select id="select" class="input w-100" name="select">
                     <option value="" disabled selected>Selecteer je leeftijdsgroep</option>
                     <option value="value1" class="contact-option">< 18 jaar</option>
@@ -67,6 +80,7 @@
                 </select>
             </div>
             <div class="col-12 col-md-12">
+                <label class="d-block mb-3" for="">Geslacht</label>
                 <div class="radio d-inline">
                     <input id="man" name="gender" class="radio" type="radio">
                     <label class="text-white" for="man"> Man</label>
@@ -77,7 +91,10 @@
                 </div>
             </div>
             <div class="col-12 col-md-12">
-                <textarea id="textarea" placeholder="Type hier je tekst!" class="input w-100 text-white" name="text" rows="1"></textarea>
+                <div class="input-control">
+                    <textarea required id="message" placeholder="Type hier je tekst!" class="input w-100 text-white" name="text" rows="2"></textarea>
+                    <label for="message">Message</label>
+                </div>
             </div>
             <div class="col-12 col-md-12">
                 <div class="checkbox d-inline">

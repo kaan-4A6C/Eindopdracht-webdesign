@@ -33,7 +33,10 @@ h1 {
 }
 
 .input:invalid {
-    border-bottom: 1px solid red;
+    box-shadow: none;
+}
+label {
+    color: white;
 }
 
 .input:focus { outline: none; }
@@ -136,4 +139,33 @@ h1 {
     transform: translateY(0.25em);
 
     margin-right: 0.5em;
+}
+
+.input-control {
+    position: relative;
+}
+.input-control label {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    color: white;
+    font-size: 1.2rem;
+
+    opacity: 0.6;
+
+    transform-origin: left;
+    transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+
+    z-index: -1;
+}
+.input-control input:focus ~ label, .input-control input:valid ~ label,
+.input-control .input:focus ~ label, .input-control .input:valid ~ label {
+    transform: translateY(-1.25em) scale(0.8);
+    opacity: 1;
+}
+.input-control input::placeholder, .input-control .input::placeholder {
+    opacity: 0;
+}
+.input-control input:invalid, .input-control .input:invalid {
+    box-shadow: none;
 }
