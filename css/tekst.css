@@ -2,12 +2,34 @@ body {
     background: #eee;
 }
 
-.box-container {
-    padding: 20px 0px;
-    min-height: 95vh;
-    /*background:  #324FB3;*/
+h1 {
+    font-size: 3em;
 }
 
 .icon {
     display: inherit;
+}
+
+.card-header {
+    position: relative;
+}
+
+.card-img {
+    max-width: 100%;
+}
+
+.card-body {
+
+}
+
+.card-footer {
+
+}
+
+.card-hr {
+    border: 1px solid #efefef;
+}
+
+.card-footer-text {
+    font-size: 0.9em;
 }
