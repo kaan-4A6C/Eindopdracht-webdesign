@@ -112,6 +112,8 @@ padding: 3px 0 !important;
 .space-between  { justify-content: space-between; }
 .align-items-stretch { align-items: stretch; }
 
+.flex-row { flex-direction: row; }
+.flex-colmn { flex-direction: column; }
 
 .row [class*="col-"] > .row {
     padding: 0;
