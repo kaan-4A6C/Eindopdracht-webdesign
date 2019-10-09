@@ -126,7 +126,9 @@ label {
     transform: translate(-50%, -50%) scale(0);
     transition: transform 300ms ease-in-out;
 }
-.radio input[type="radio"]:checked ~ .radio-button::after {
+.radio input[type="radio"]:checked ~ label .radio-button::after,
+.radio input[type="radio"]:checked ~ .radio-button::after,
+.radio-button.active {
     transform: translate(-50%, -50%) scale(1);
 }
 
@@ -154,7 +156,7 @@ label {
 
 }
 .checkbox input[type="checkbox"]:checked ~ label::after {
-    transform: translateY(0.35em) scale(1);
+    transform: translateY(0.25em) scale(1);
 }
 .checkbox label::before {
     content: "";
