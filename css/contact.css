@@ -73,7 +73,7 @@ label {
     }
 }
 
-.radio {
+/* .radio {
     position: relative;
 }
 .radio input[type="radio"] {
@@ -88,7 +88,6 @@ label {
     top: 4px;
     position: absolute;
     background: white;
-    /* border: 5px solid white; */
     border-radius: 50%;
     transform: scale(0);
     transition: transform 300ms ease-in-out;
@@ -97,13 +96,38 @@ label {
     transform: scale(1);
 }
 .radio label::before {
+    
+} */
+
+.radio input[type="radio"] {
+    display: none;
+}
+
+.radio-button {
+    position: relative;
     content: "";
     display: inline-block;
-    width: 1em;
-    height: 1em;
+    width: 20px;
+    height: 20px;
     border: 2px solid white;
     border-radius: 50%;
-    transform: translateY(0.25em);
+    transform: translateY(20%);
+}
+.radio-button::after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 300ms ease-in-out;
+}
+.radio input[type="radio"]:checked ~ .radio-button::after {
+    transform: translate(-50%, -50%) scale(1);
 }
 
 .checkbox {
@@ -125,12 +149,12 @@ label {
     left: 0.2em;
     top: -3px;
     position: absolute;
-    transform: translateY(0.25em) scale(0);
+    transform: translateY(0.35em) scale(0);
     transition: transform 300ms ease-in-out;
 
 }
 .checkbox input[type="checkbox"]:checked ~ label::after {
-    transform: translateY(0.25em) scale(1);
+    transform: translateY(0.35em) scale(1);
 }
 .checkbox label::before {
     content: "";
