@@ -50,9 +50,8 @@ h1 {
     top: calc(50% - 1em);
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    width: 80%;
-    max-height: 90vh;
-    max-width: 90vh;
+    /* width: 80%; */
+    max-width: 90vw;
     overflow: initial;
     padding-top: 3em;
     height: initial;
@@ -66,6 +65,7 @@ h1 {
     transform: none;
     max-height: 65vh;
     object-fit: contain;
+    width: auto;
 }
 .image-checkbox:checked ~ .img-wrapper .close {
     display:  initial;
