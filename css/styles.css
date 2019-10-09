@@ -60,7 +60,14 @@ padding: 3px 0 !important;
 
 #footer-nav > ul > li > a {
     text-decoration: none;
+    transition: padding-left 300ms ease-in-out;
 }
+
+#footer-nav > ul > li > a:hover {
+    padding-left: 8px;
+}
+
+
 
 .text-primary { color: #FF7954; }
 
