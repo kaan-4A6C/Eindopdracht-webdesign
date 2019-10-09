@@ -572,6 +572,32 @@ main {
     transform: scale(1.02);
 }
 
+.card-header {
+    position: relative;
+}
+
+.card-img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+
+}
+
+.card-footer {
+
+}
+
+.card-hr {
+    border: 1px solid #efefef;
+}
+
+.card-footer-text {
+    font-size: 0.9em;
+}
+
 /* end card */
 
 /* margins  */
