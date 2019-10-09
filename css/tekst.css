@@ -18,6 +18,10 @@ h1 {
     max-width: 100%;
 }
 
+.pos-bottom {
+    object-position: bottom;
+}
+
 .card-body {
 
 }
@@ -32,4 +36,10 @@ h1 {
 
 .card-footer-text {
     font-size: 0.9em;
+}
+
+@media screen and (max-width: 576px) {
+    #card-main {
+        padding: 0 !important;
+    }
 }
