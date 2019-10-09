@@ -12,7 +12,7 @@
 }
 
 .block {
-    height: 47.3vh;
+    height: calc((100vh - 52px) / 2);
 }
 
 .text-styling {
@@ -29,17 +29,5 @@
 @media screen and (max-width: 1000px) {
     .text-styling {
         font-size: 1em;
-    }
-}
-
-@media screen and (min-width: 786px) {
-    main {
-        position: fixed;
-        z-index: -1;
-        width: 100%;
-    }
-    
-    footer {
-        margin-top: 100vh;
     }
 }
