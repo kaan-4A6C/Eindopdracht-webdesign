@@ -1,0 +1,324 @@
+/* Menu */
+
+/* logo */
+
+nav.menu #logo {
+    background: #FF7954;
+    width: 60px;
+
+    transition: width 300ms ease-in-out;
+}
+nav.menu #logo a {
+    display: block;
+    padding: 0.8em 0.5em;
+}
+nav.menu #logo:hover {
+    width: 125px;
+}
+nav.menu #logo span {
+    display: inline-block;
+}
+nav.menu #logo span.fade-in {
+    overflow: hidden;
+    width: 0;
+    transition: width 300ms ease-in-out, opacity 300ms 300ms ease-in-out, transform 300ms 300ms ease-in-out;
+    opacity: 0;
+    transform: translateY(100%);
+}
+nav.menu #logo:hover span.fade-in {
+    width: 32px;
+    opacity: 1;
+    transform: translateY(4px);
+}
+/* end logo */
+
+/* hamburger menu */
+#hamburger {
+    display: none;
+}
+#hamburger:checked ~ .menu-items {
+    height: 100%;
+}
+#hamburger:checked ~ .hamburger-label .hamburger .burger:nth-child(1) {
+    transform: translateY(12px) rotate(45deg);
+}
+#hamburger:checked ~ .hamburger-label .hamburger .burger:nth-child(3) {
+    transform: translateY(-14px) rotate(-45deg);
+}
+#hamburger:checked ~ .menu-items ul li {
+    transform-origin: top;
+    transform: rotateX(0deg);
+}
+#hamburger:checked ~ .hamburger-label .hamburger .burger:nth-child(2) {
+    transform: translateX(50px);
+    opacity: 0;
+}
+nav.menu .hamburger {
+    padding: 10.5px;
+    cursor: pointer;
+}
+nav.menu .hamburger:hover .burger {
+    transform: translateX(-5px);
+}
+nav.menu .hamburger:hover .burger:nth-child(2) {
+    transform: translateX(5px);
+}
+nav.menu .burger {
+    height: 5px;
+    width: 2.5em;
+    margin-bottom: 8px;
+    background: #fff;
+    transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+}
+nav.menu .hamburger .burger:nth-child(3) {
+    margin-bottom: 0;
+}
+
+/* end hamburger menu */
+
+nav.menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav.menu .menu-items {
+    position: fixed;
+    top: 48.8px;
+    width: 100%;
+
+    height: 0;
+    overflow: hidden;
+    transition: height 2400ms linear;
+}
+
+nav.menu ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav.menu ul li {
+    position: relative;
+    background: #252525;
+    transform: rotateX(90deg);
+    transform-origin: bottom;
+
+    transition: transform 200ms ease-in-out;
+}
+nav.menu ul li:nth-child(2) {
+    transition: transform 200ms 200ms ease-in-out;
+}
+nav.menu ul li:nth-child(3) {
+    transition: transform 200ms 400ms ease-in-out;
+}
+nav.menu ul li:nth-child(4) {
+    transition: transform 200ms 600ms ease-in-out;
+}
+nav.menu ul li:nth-child(5) {
+    transition: transform 200ms 800ms ease-in-out;
+}
+nav.menu ul li:nth-last-child(1) {
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.75);
+}
+nav.menu ul li a,
+nav.menu .menu-items ul li label {
+    display: block;
+    padding: 1em;
+    position: relative;
+    color: white;
+    cursor: pointer;
+}
+nav.menu ul li a::before,
+nav.menu .menu-items ul li label::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #FF7954;
+    z-index: -1;
+
+    transition: width 300ms ease-in-out;
+}
+nav.menu ul li:nth-child(odd) a::before {
+    left: initial;
+    right: 0;
+}
+nav.menu ul > li:hover > a::before,
+nav.menu ul > li.active > a::before,
+nav.menu .menu-items ul > li:hover > label::before,
+nav.menu .menu-items ul > li.active > label::before,
+nav.menu .menu-items ul li > input:checked ~ label::before {
+    width: 100%;
+}
+
+nav.menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+    background: #252525;
+
+    /* background: linear-gradient(to right, black , #010147); */
+    /* background: linear-gradient(to left, #000 75% , #324FB3); */
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+    z-index: 999;
+}
+
+nav.menu .menu-items ul li > input {
+    display: none;
+}
+nav.menu .menu-items ul li > ul {
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    height: 0%;
+    overflow: hidden;
+
+    transition: height 300ms ease-in-out;
+}
+nav.menu .menu-items ul li > ul > li a {
+    padding-left: 1.5em;
+}
+nav.menu .menu-items ul li > input:checked ~ ul {
+    display: flex;
+    height: 100%;
+}
+
+main {
+    margin-top: 52px; /* fixes menu over content */
+}
+
+@media screen and (min-width: 576px) {
+    nav.menu ul {
+        flex-direction: row;
+    }
+    nav.menu .menu-items {
+        width: 420px;
+        position: initial;
+        top: 0;
+        box-shadow: none;
+        display: initial;
+        height: initial;
+        overflow: initial;
+    }
+    nav.menu ul li {
+        transform: rotateX(0deg);
+    }
+    nav.menu ul li:nth-last-child(1) {
+        box-shadow: none;
+    }
+    nav.menu ul li a::before,
+    nav.menu .menu-items ul li label::before {
+        height: 0;
+        width: 100%;
+        left: 0;
+        top: 0;
+
+        transition: height 300ms ease-in-out;
+    }
+    nav.menu ul li:nth-child(odd) a::before {
+        top: initial;
+        bottom: 0;
+    }
+    nav.menu ul > li:hover > a::before,
+    nav.menu ul > li.active > a::before,
+    nav.menu .menu-items ul > li:hover > label::before,
+    nav.menu .menu-items ul > li.active > label::before,
+    nav.menu .menu-items ul li > input:checked ~ label::before {
+        height: 100%;
+    }
+
+    nav.menu .menu-items ul li > ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 52px;
+        height: 0%;
+        overflow: hidden;
+    
+        transition: height 300ms ease-in-out;
+    }
+    nav.menu .menu-items ul li > ul > li a {
+        padding-left: 1em;
+    }
+    nav.menu .menu-items ul li > input:checked ~ ul {
+        display: flex;
+        height: 400%;
+    }
+}
+
+/* end menu */
+
+
+
+/* footer */
+footer {
+    background: #252525;
+}
+
+.footer-hr {
+    border: 1px solid #fff;
+    height: 1px;
+}
+
+.footer-padding { padding: 40px 8%; }
+
+.footer-icon > a {
+    color: #FF7954;
+}
+
+.next-page {
+    text-decoration: none;
+    font-size: 2.1em;
+    display: inline-block;
+}
+
+.next-page::after {
+    content: "";
+    display: block;
+    background: #FF7954;
+    height: 3px;
+    width: 0;
+    transition: width 300ms ease-in-out;
+}
+
+.next-page:hover::after {
+    width: 100%;
+}
+
+#snapchat-icon:hover {
+    transition: color 1s ease-out;
+    color: rgb(255, 252, 0);
+}
+
+#facebook-icon:hover {
+    transition: color 1s ease-out;
+    color: #4267B2;
+}
+
+#github-icon:hover {
+    transition: color 1s ease-out;
+    color: #fff;
+}
+
+#footer-nav > ul > li {
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+#footer-nav > ul > li > a {
+    text-decoration: none;
+    transition: padding-left 300ms ease-in-out;
+}
+
+#footer-nav > ul > li > a:hover {
+    padding-left: 8px;
+}
+
+/* end footer */

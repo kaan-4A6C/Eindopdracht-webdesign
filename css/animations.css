@@ -1,0 +1,101 @@
+/* animations */
+@keyframes left-to-pos {
+    from { transform: translateX(-25%); }
+    to { transform: translateX(0); }
+}
+.ani.left-to-pos {
+    transform: translateX(-25%);
+    animation-name: left-to-pos;
+}
+.ani.left-to-pos.reverse {
+    transform: translateX(0%);
+}
+@keyframes right-to-pos {
+    from { transform: translateX(25%); }
+    to { transform: translateX(0); }
+}
+.ani.right-to-pos {
+    transform: translateX(25%);
+    animation-name: right-to-pos;
+}
+.ani.right-to-pos.reverse {
+    transform: translateX(0%);
+}
+@keyframes bottom-to-pos {
+    from { transform: translateY(25%); }
+    to { transform: translateY(0); }
+}
+.ani.bottom-to-pos {
+    transform: translateY(25%);
+    animation-name: bottom-to-pos;
+}
+.ani.bottom-to-pos.reverse {
+    transform: translateY(0%);
+}
+@keyframes top-to-pos {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+.ani.top-to-pos {
+    transform: translateY(-100%);
+    animation-name: top-to-pos;
+}
+.ani.top-to-pos.reverse {
+    transform: translateY(0%);
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.ani.fade {
+    opacity: 0;
+    animation-name: fade;
+}
+.ani.fade.reverse { opacity: 1; }
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+.ani.spin { animation-name: spin; }
+.ani.spin.reverse { transform: rotate(360deg); }
+
+@keyframes zoom {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.ani.zoom { animation-name: zoom; }
+.ani.zoom.reverse { transform: scale(1); }
+
+.ani {
+    animation-fill-mode: forwards; /* last keyframe is final css */
+    animation-timing-function: ease-in-out; /* default animation */
+}
+
+.ani.onhover { animation-play-state: paused; }
+.ani.onhover:hover { animation-play-state: running; }
+
+.ani.reverse { animation-direction: reverse; }
+
+.ani.duration-03 { animation-duration: 300ms; }
+.ani.duration-05 { animation-duration: 500ms; }
+.ani.duration-1 { animation-duration: 1s; }
+.ani.duration-15 { animation-duration: 1.5s; }
+.ani.duration-2 { animation-duration: 2s; }
+.ani.duration-3 { animation-duration: 3s; }
+.ani.duration-4 { animation-duration: 4s; }
+
+.ani.delay-05 { animation-delay: 500ms; }
+.ani.delay-1 { animation-delay: 1s; }
+.ani.delay-2 { animation-delay: 2s; }
+.ani.delay-3 { animation-delay: 3s; }
+.ani.delay-4 { animation-delay: 4s; }
+
+.ani.infinity { animation-iteration-count: infinite; }
+
+.ani.linear { animation-timing-function: linear; }
+.ani.ease-in-out { animation-timing-function: ease-in-out; }
+.ani.bounce { animation-timing-function: cubic-bezier(.1,-0.09,.27,1.55); }
+
+/* end animations */
