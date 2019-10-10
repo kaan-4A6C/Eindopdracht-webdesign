@@ -51,7 +51,6 @@ padding: 3px 0 !important;
     height: 3px;
     width: 0;
     transition: width 300ms ease-in-out;
-    margin-bottom: 3em;
 }
 
 .next-page:hover::after {
@@ -633,7 +632,7 @@ main {
 .ml-2, .mx-2, .m-2 { margin-left: calc(1em * 0.5) !important; }
 .ml-3, .mx-3, .m-3 { margin-left: calc(1em * 1) !important; }
 .ml-4, .mx-4, .m-4 { margin-left: calc(1em * 1.5) !important; }
-.ml-5, .mx-5, .m-5 { margin-left: calc(1em * 3) !important; } 
+.ml-5, .mx-5, .m-5 { margin-left: calc(1em * 3) !important; }
 
 .mr-0, .mx-0, .m-0 { margin-right: 0 !important; }
 .mr-1, .mx-1, .m-1 { margin-right: calc(1em * 0.25) !important; }
