@@ -66,6 +66,7 @@ h1 {
     max-height: 65vh;
     object-fit: contain;
     width: auto;
+    max-width: 90vw;
 }
 .image-checkbox:checked ~ .img-wrapper .close {
     display:  initial;

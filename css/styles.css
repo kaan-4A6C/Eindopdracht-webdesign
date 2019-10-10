@@ -19,15 +19,15 @@ footer {
 }
 
 .footer-hr {
-border: 1px solid #fff;
-height: 1px;
+    border: 1px solid #fff;
+    height: 1px;
 }
 
 .footer-padding { padding: 40px 8%; }
 
 .footer-nav-item {
-display: block;
-padding: 3px 0 !important;
+    display: block;
+    padding: 3px 0 !important;
 }
 /* 
 .footer-icon {
@@ -363,7 +363,7 @@ nav.menu .menu-items {
     width: 100%;
 
     height: 0;
-    /* overflow: hidden; */
+    overflow: hidden;
     transition: height 2400ms linear;
 }
 
@@ -481,6 +481,7 @@ main {
         box-shadow: none;
         display: initial;
         height: initial;
+        overflow: initial;
     }
     nav.menu ul li {
         transform: rotateX(0deg);
