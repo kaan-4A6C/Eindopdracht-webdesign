@@ -10,9 +10,12 @@ h1 {
     font-size: 2rem;
 }
 
-#textarea { resize: none; }
+#message { resize: vertical; }
 #select { color: #fff; }
-#select > option { background: #324FB3; }
+#select > option {
+    background: #fff;
+    color: #252525;
+}
 
 .row.padding { padding: 0 25%; }
 
